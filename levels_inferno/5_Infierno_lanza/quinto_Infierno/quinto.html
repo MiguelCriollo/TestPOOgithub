@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L.C.D-GAME</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="quinto.js"></script>
+<link rel="stylesheet" href="quinto.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.3.3/howler.min.js"></script>
+</head>
+<body onclick="PlayAudio()">
+  <h1 class="titu">
+    N. Prologo
+  </h1>
+
+    <div class="iconos"></div>
+
+    <div id="contenedor">
+        <p id="parrafo">Salir de aquel infierno fue fácil, no hubieron personas que sufrieran de algo, incluso si a la final se arto de la luz, fue relajante hacerlo, lo único que lo incomodó un poco, fueron las estatuas de humanos hechas de oro que estaban esparcidas por todo el lugar, sobre todo sus rostros que no mostraban nada más que pura alegría, dejando de lado aquello sigues caminando por la cueva que te llevará al siguiente círculo.</p>
+    </div>
+
+        <div id="menu">
+          <h2>Menú</h2>
+            <div id="objetos">
+             <div id="vida">
+               <h3>Vida</h3>
+               <i  class="fa-solid fa-heart fa-beat" style="color: #fd2112;"></i>
+               <p>100%</p>
+             </div>
+          <h3>Objetos</h3>
+          <ul>
+            <li>Objeto 1</li>
+            <li>Objeto 2</li>
+          </ul>
+        </div>
+      </div>
+
+<button id="siguiente" onclick="siguiente()">Siguiente</button>
+<div id="opciones" style="display: none;"><p id="Eleccion">¿Que camino escojeras?</p>
+<button class="opcionA" onclick="opcionA()">Matar</button>
+<button class="opcionB" onclick="opcionB()">Salvar</button>
+</div>
+
+<div class="audio-player">
+  <audio controls src="../../../musica/Infierno_lanza.mp3"></audio>
+</div>
+
+</body>
+</html>
