@@ -1,20 +1,25 @@
 import {objetoTest} from "./objetos.js";
 
-let textoPrueba = document.getElementById("texto");
 let boton = document.getElementById("mi-boton");
-textoPrueba.textContent="";
-let cont=0;
-
-
-function test(){
-    textoPrueba.textContent+=objetoTest.C1.inicial[cont];
-    cont++;
-    objetoTest.C1.inicial[cont]??clearInterval(intervalo);
+let textoPrueba = document.getElementById("texto");
+let imprimir;
+function textPrinting(textToPrint){
+    let cont=0;
+    textoPrueba.textContent="";
+    return ()=>{
+        textoPrueba.textContent+=textToPrint[cont];
+        cont++;
+        console.log(`Contador: ${cont} dice: {textToPrint[cont]}`);
+        textToPrint[cont]??clearInterval(intervalo);
+    }
 }
 
+function activatePrinting(){
+    let intervalo=setInterval(imprimir, 20);
+}
+function newTextOrigin(){
+    imprimir=textPrinting(objetoTest.C0.inicial);
+}
+newTextOrigin();
 
-let intervalo=setInterval(test, 100);
-
-
-boton.addEventListener("click",test);
-
+boton.addEventListener("click",activatePrinting);
