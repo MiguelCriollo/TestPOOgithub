@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.img {
+    margin: auto;
+}
+
+.img_prin {
+    position: static;
+    width: 100%;
+    height: 100%;
+    background: #baadad;
+}
+texto {
+    height: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(255, 255, 255, 0.377);
+    border-radius: 55px;ç}
+    
