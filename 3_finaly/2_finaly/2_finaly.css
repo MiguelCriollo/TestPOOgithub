@@ -37,7 +37,7 @@ body {
 }
 
 .Tex_1 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -55,7 +55,9 @@ body {
 }
 
 .center-text {
-    font-size: 24px;
+    font-size: 50px;
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .boton {
@@ -63,8 +65,12 @@ body {
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-}
+    border-radius: 15%;
+    background-color: black;
+    cursor: pointer;}
 
 .txt-btn {
     font-size: 18px;
+    color: aliceblue;
+    font-family:monospace;
 }
