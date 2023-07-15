@@ -37,6 +37,17 @@ html,body,
             text-transform: uppercase; /* Mayúsculas */
             color: white;
         }
+    
+    #bodyText-footer{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+        #bodyText-footerAudio{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+       
 
 #bodyPlayer{
     display: grid;
@@ -47,7 +58,7 @@ html,body,
     #bodyPlayer-Info{
         display: grid;
         grid-template-rows: 15% auto; /* Dos columnas de tamaño igual */
-        gap: 20px;
+        gap: 10px;
         margin: 5px;
     }
     #bodyPlayer-Data{
@@ -191,11 +202,6 @@ body {
 }
 
 .audio-player {
-    position: fixed;
-    left: 20px;
-    bottom: 20px;
-    display: flex;
-    align-items: center;
     background-color: transparent;
 }
 
