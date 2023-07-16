@@ -99,7 +99,9 @@ body {
         }
         #bodyPlayer-playerDescription{
             max-height: 100%;
-            overflow: auto;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
         }
             #bodyPlayer-playerDescription p{
                 font-size: 100%;
@@ -107,6 +109,8 @@ body {
                 margin: 0;
                 text-align: justify;
             }
+
+            
     #bodyPlayer-Data{
         display: grid;
         grid-template-rows: 10% auto 40%; /* Dos columnas de tamaño igual */
@@ -124,8 +128,121 @@ body {
                 color: white;
                 font-size: 100%;
             }
+        
+        #bodyPlayer-life{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+            #bodyPlayer-life h3{
+                color: white;
+                font-size: 100%;
+            }
+            #bodyPlayer-life p{
+                color: white;
+                font-size: 100%;
+            }
+   
+        #bodyPlayer-inventory{
+            display: grid;
+            grid-template-rows: 15% auto; /* Dos columnas de tamaño igual */
+            
+        }
+            #inventoryTitle{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold; /* Negrita */
+                text-transform: uppercase; /* Mayúsculas */
+                color: white;
+            }
 
-    #bodyText-buttons{
+                #inventoryTitle p{
+                    font-size: 1vh;
+                }
+
+            #inventoryBox{
+                display: grid;
+                grid-template-areas:
+                    "1A 2A"
+                    "1B 2B"
+                    "1C 2C";
+                grid-template-columns: 30% auto;
+                grid-template-rows: 1fr 1fr 1fr;
+            }
+
+            
+            .inventoryImgContainer{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #obj1Img{
+                width: 25px;
+                height: 25px;
+                background-image: url(./images/obj1Iamgen.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            #obj1Texto{
+                display: flex;
+                align-items: center;
+                justify-content: left;
+            }
+
+                #obj1Texto p{
+                    font-size: 1vh;
+                    font-weight: bold; /* Negrita */
+                    text-transform: uppercase; /* Mayúsculas */
+                    color: white;
+                }
+
+
+            #obj2Img{
+                width: 25px;
+                height: 25px;
+                background-image: url(./images/obj1Iamgen.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            #obj2Texto{
+                display: flex;
+                align-items: center;
+                justify-content: left;
+            }
+                #obj2Texto p{
+                    font-size: 1vh;
+                    font-weight: bold; /* Negrita */
+                    text-transform: uppercase; /* Mayúsculas */
+                    color: white;
+                }
+
+            #obj3Img{
+                width: 25px;
+                height: 25px;
+                background-image: url(./images/obj1Iamgen.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            #obj3Texto{
+                display: flex;
+                align-items: center;
+                justify-content: left;
+            }
+                #obj3Texto p{
+                    font-size: 1vh;
+                    font-weight: bold; /* Negrita */
+                    text-transform: uppercase; /* Mayúsculas */
+                    color: white;
+                }
+/***********************************************/
+
+
+ #bodyText-buttons{
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -133,42 +250,11 @@ body {
     }
 
 
-#bodyPlayer-inventory{
-    display: grid;
-    grid-template-rows: 15% auto; /* Dos columnas de tamaño igual */
-    
-}
-    #inventoryTitle{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: bold; /* Negrita */
-        text-transform: uppercase; /* Mayúsculas */
-        color: white;
-    }
-        #inventoryTitle p{
-            font-size: 1vw;
-        }
-    #inventoryBox{
-        display: grid;
-        grid-template-areas:
-            "1A 2A"
-            "1B 2B"
-            "1C 2C";
-        grid-template-columns: 30% auto;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-/***********************************************/
-
-
-
-
 body {
     background-image: url(../images/inferno_0.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
