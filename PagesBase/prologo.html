@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L.C.D-GAME</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="script.js"></script>
+    <script src="initScript.js"></script>
 <link rel="stylesheet" href="estilos.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.3.3/howler.min.js"></script>
 </head>
@@ -23,15 +23,15 @@
 
             <div id="bodyText-history" class="mostrarBorde">
                 <div id="historyContainer">
-                    <p>Caminar por este sitio es todo lo que sabes hacer, tus recuerdos no son más que fragmentos dispersos, 
+                    <p id="historyText">Caminar por este sitio es todo lo que sabes hacer, tus recuerdos no son más que fragmentos dispersos, 
                         lo que alguna vez fuistes ya no existe y los únicos recuerdos que logras recordar es caminar por un mar de llamas que devora todo lo que está a su paso.</p>
                 </div>
             </div>
 
             <div id="bodyText-buttons" class="mostrarBorde">
-                <button id="bodyText-button-next" onclick="next()">Siguiente</button>
-                <button class="optionA" onclick="optionA()">Avanzar</button>
-                <button class="optionB" onclick="optionB()">Quedarse</button>
+                <button id="button-next" >Siguiente</button>
+                <button class="optionA" >Avanzar</button>
+                <button class="optionB" >Quedarse</button>
               
             </div>
 
@@ -116,38 +116,7 @@
             </div>
 
         </div>
-        <!--
-        
-        
-                <div id="menu">
-                  <h2>Menú</h2>
-                    <div id="objects">
-                     <div id="life">
-                       <h3>Vida</h3>
-                       <i  class="fa-solid fa-heart fa-beat" style="color: #fd2112;"></i>
-                       <p>100%</p>
-                     </div>
-                  <h3>Objetos</h3>
-                  <ul>
-                    <li>Objeto 1</li>
-                    <li>Objeto 2</li>
-                  </ul>
-                </div>
-              </div>
-        
-              <button id="next" onclick="next()">Siguiente</button>
-        
-              <div id="option" style="display: none;"><p id="choice">¿Que camino escojeras?</p>
-                <button class="optionA" onclick="optionA()">Avanzar</button>
-                <button class="optionB" onclick="optionB()">Quedarse</button>
-              </div>
-        
-              <div class="audio-player">
-                <audio controls src="../../../music/levels/level-0/fire.mp3"></audio>
-              </div>
-            -->
     </div>
-
-
 </body>
+<script type="module" src="main.js"></script>
 </html>

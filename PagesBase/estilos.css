@@ -72,7 +72,7 @@ body {
                 align-items: center;
                 
             }
-            
+
             #bodyText-footer{
                 display: grid;
                 grid-template-columns: auto auto;
@@ -269,7 +269,7 @@ body {
 
 
 
-#bodyText-button-next {
+#button-next {
     color: #fff8f8;
     letter-spacing: 4px;
     text-decoration: none;
@@ -279,7 +279,7 @@ body {
     box-shadow: 0 0 10px #db2828, 0 0 40px #db2828, 0 0 80px #db2828;
 }
 
-#bodyText-button-next:hover {
+#button-next:hover {
     box-shadow: 0 0 10px #db2828, 0 0 80px #db2828, 0 0 120px #db2828;
 }
 
