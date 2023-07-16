@@ -50,7 +50,7 @@ body {
             color: white;
         }
     #bodyText-history{
-
+        padding: 10px;
     }   
         #historyContainer {
             background-color: #ada9a9;
@@ -66,15 +66,22 @@ body {
                 font-size: 200%;
                 text-align: justify;
             }
-    #bodyText-footer{
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-        #bodyText-footerAudio{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+            #bodyText-buttons{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                
+            }
+            
+            #bodyText-footer{
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+                #bodyText-footerAudio{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
        
 
 #bodyPlayer{
@@ -179,6 +186,7 @@ body {
                 justify-content: center;
             }
 
+
             #obj1Img{
                 width: 25px;
                 height: 25px;
@@ -201,6 +209,7 @@ body {
                 }
 
 
+
             #obj2Img{
                 width: 25px;
                 height: 25px;
@@ -220,6 +229,7 @@ body {
                     text-transform: uppercase; /* Mayúsculas */
                     color: white;
                 }
+
 
             #obj3Img{
                 width: 25px;
@@ -242,12 +252,7 @@ body {
 /***********************************************/
 
 
- #bodyText-buttons{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        
-    }
+
 
 
 body {
