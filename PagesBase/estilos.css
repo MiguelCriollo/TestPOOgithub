@@ -55,23 +55,25 @@ body {
         #historyContainer {
             background-color: #ada9a9;
             border: 1px solid #000000;
+            box-sizing: border-box;
             border-radius: 5px;
             background-color: rgba(48, 48, 48, 0.5);
             color: rgb(255, 255, 255);
             height: 100%;
+            padding: 10px;
         }
         
             #historyContainer p{
                 text-align: center;
-                font-size: 200%;
+                font-size: 100%;
                 text-align: justify;
             }
-            #bodyText-buttons{
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                
-            }
+
+        #bodyText-buttons{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;   
+        }
 
             #bodyText-footer{
                 display: grid;
