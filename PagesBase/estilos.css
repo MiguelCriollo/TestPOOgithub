@@ -64,9 +64,7 @@ body {
         }
         
             #historyContainer p{
-                text-align: center;
                 font-size: 100%;
-                text-align: justify;
             }
 
         #bodyText-buttons{

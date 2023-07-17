@@ -8,21 +8,6 @@ nextButton.addEventListener("click",function(){
     activatePrinting();
 });
     
-
-function textPrinting(textToPrint){
-    let cont=0;
-    historyText.textContent="";
-    return ()=>{
-        historyText.textContent+=textToPrint[cont];
-        cont++;
-        console.log(`Contador: ${cont} dice: {textToPrint[cont]}`);
-        //textToPrint[cont]??clearInterval(intervalo);
-        if(cont==100){
-            clearInterval(intervalo);
-        }
-    }
-}
-
 function activatePrinting(){
         let cont=0;
         historyText.textContent="";
