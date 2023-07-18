@@ -1,120 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>L.C.D-GAME</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <script src="script.js"></script>
-<link rel="stylesheet" href="estilos.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.3.3/howler.min.js"></script>
-</head>
-<body>
-
+    <link rel="stylesheet" href="estilos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.3.3/howler.min.js"></script>
+  </head>
+  <body>
     <div id="bodySeparation" class="mostrarBorde">
-        
-        <div id="bodyText" class="mostrarBorde">
-
-            <div id="bodyText-title" class="mostrarBorde">
-                <p id="mainTitle">
-                    Infierno 0
-                </p>
-            </div>
-
-            <div id="bodyText-history" class="mostrarBorde">
-                <div id="historyContainer">
-                    <p>Caminar por este sitio es todo lo que sabes hacer, tus recuerdos no son más que fragmentos dispersos, 
-                        lo que alguna vez fuistes ya no existe y los únicos recuerdos que logras recordar es caminar por un mar de llamas que devora todo lo que está a su paso.</p>
-                </div>
-            </div>
-
-            <div id="bodyText-buttons" class="mostrarBorde">
-                <button id="bodyText-button-next" onclick="next()">Siguiente</button>
-                <button class="optionA" onclick="optionA()">Avanzar</button>
-                <button class="optionB" onclick="optionB()">Quedarse</button>
-              
-            </div>
-
-            <div id="bodyText-music" class="mostrarBorde">
-                <div class="audio-player">
-                    <audio controls src="../../../music/levels/level-0/fire.mp3"></audio>
-                  </div>
-            </div>
-
+      <div id="bodyText" class="mostrarBorde">
+        <div id="bodyText-title" class="mostrarBorde">
+          <p id="mainTitle">Infierno 0</p>
         </div>
 
-        <div id="bodyPlayer" class="mostrarBorde">
-
-            <div id="bodyPlayer-Info" class="mostrarBorde centerContent">
-
-                <div id="bodyPlayer-namePlayer" class="mostrarBorde">
-                    <p>Dante</p>
-                </div>
-
-                <div id="bodyPlayer-playerDescription" class="mostrarBorde">
-                    <p>Dante fue un chico de barrio dedicado al trafico de encebollado de chancho con frijoles, una receta tipica de su abuela juanita, por sus crimenes contra la salud publica es enviado al mismo infierno</p>
-                </div>
-
-            </div>
-            <div id="bodyPlayer-Data" class="mostrarBorde">
-
-                <div id="bodyPlayer-title" class="mostrarBorde centerContent">
-                    <p>Personaje</p>
-                </div>
-
-                <div id="bodyPlayer-life" class="mostrarBorde centerContent">
-                    <div id="life">
-                        <h3>Vida</h3>
-                        <i  class="fa-solid fa-heart fa-beat" style="color: #fd2112;"></i>
-                        <p>100%</p>
-                      </div>
-                </div>
-
-                <div id="bodyPlayer-inventory" class="mostrarBorde">
-
-                    <p id="inventoryTitle">
-                        Inventario
-                    </p>
-                    
-                    <div id="inventoryBox">
-
-                        <div id="obj1Img">
-
-                        </div>
-
-                        <div id="obj1Texto">
-
-                            <p>Objeto1</p>
-
-                        </div>
-
-                        <div id="obj2Img">
-
-                        </div>
-
-                        <div id="obj2Texto">
-
-                            <p>Objeto2</p>
-                            
-                        </div>
-
-                        <div id="obj3Img">
-
-                        </div>
-
-                        <div id="obj3Texto">
-
-                            <p>Objeto3</p>
-                            
-                        </div>
-
-                    </div>
-                </div>
-                
-            </div>
-
+        <div id="bodyText-history" class="mostrarBorde">
+          <div id="historyContainer">
+            <p>
+              Caminar por este sitio es todo lo que sabes hacer, tus recuerdos
+              no son más que fragmentos dispersos, lo que alguna vez fuistes ya
+              no existe y los únicos recuerdos que logras recordar es caminar
+              por un mar de llamas que devora todo lo que está a su paso.
+            </p>
+          </div>
         </div>
-        <!--
+
+        <div id="bodyText-buttons" class="mostrarBorde">
+          <button id="bodyText-button-next" onclick="next()">Siguiente</button>
+          <button class="optionA" onclick="optionA()">Avanzar</button>
+          <button class="optionB" onclick="optionB()">Quedarse</button>
+        </div>
+
+        <div id="bodyText-music" class="mostrarBorde">
+          <div class="audio-player">
+            <audio
+              controls
+              src="../../../music/levels/level-0/fire.mp3"
+            ></audio>
+          </div>
+        </div>
+      </div>
+
+      <div id="bodyPlayer" class="mostrarBorde">
+        <div id="bodyPlayer-Info" class="mostrarBorde centerContent">
+          <div id="bodyPlayer-namePlayer" class="mostrarBorde">
+            <p>Dante</p>
+          </div>
+
+          <div id="bodyPlayer-playerDescription" class="mostrarBorde">
+            <p>
+              Dante fue un chico de barrio dedicado al trafico de encebollado de
+              chancho con frijoles, una receta tipica de su abuela juanita, por
+              sus crimenes contra la salud publica es enviado al mismo infierno
+            </p>
+          </div>
+        </div>
+        <div id="bodyPlayer-Data" class="mostrarBorde">
+          <div id="bodyPlayer-title" class="mostrarBorde centerContent">
+            <p>Personaje</p>
+          </div>
+
+          <div id="bodyPlayer-life" class="mostrarBorde centerContent">
+            <div id="life">
+              <h3>Vida</h3>
+              <i class="fa-solid fa-heart fa-beat" style="color: #fd2112"></i>
+              <p>100%</p>
+            </div>
+          </div>
+
+          <div id="bodyPlayer-inventory" class="mostrarBorde">
+            <p id="inventoryTitle">Inventario</p>
+
+            <div id="inventoryBox">
+              <div id="obj1Img"></div>
+
+              <div id="obj1Texto">
+                <p>Objeto1</p>
+              </div>
+
+              <div id="obj2Img"></div>
+
+              <div id="obj2Texto">
+                <p>Objeto2</p>
+              </div>
+
+              <div id="obj3Img"></div>
+
+              <div id="obj3Texto">
+                <p>Objeto3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--
         
         
                 <div id="menu">
@@ -145,7 +129,5 @@
               </div>
             -->
     </div>
-
-
-</body>
+  </body>
 </html>

@@ -55,7 +55,9 @@ body {
 }
 
 .center-text {
-    font-size: 24px;
+    font-size: 50px;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
 .boton {
@@ -63,8 +65,13 @@ body {
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
+    border-radius: 15%;
+    background-color: black;
+    cursor: pointer;
 }
 
 .txt-btn {
     font-size: 18px;
+    color: aliceblue;
+    font-family: monospace;
 }

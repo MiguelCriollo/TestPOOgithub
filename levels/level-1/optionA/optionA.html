@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>L.C.D-GAME</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <script src="optionA.js"></script>
-<link rel="stylesheet" href="optionA.css">
-</head>
-<body>
+    <link rel="stylesheet" href="optionA.css" />
+  </head>
+  <body>
+    <div class="pageContainer">
+      <h1 class="title">I. Limbo</h1>
 
-<div class="pageContainer">
+      <div class="icons"></div>
 
-  <h1 class="title">
-    I. Limbo
-  </h1>
+      <div id="container">
+        <p id="paragraph">
+          No permitirás morir cuando tan solo has dado el primer paso, para
+          darte valor usas el agua bendita.
+        </p>
+      </div>
 
-    <div class="icons"></div>
-
-    <div id="container">
-        <p id="paragraph">No permitirás morir cuando tan solo has dado el primer paso, para darte valor usas el agua bendita.</p>
-    </div>
-
-        <div id="menu">
-          <h2>Menú</h2>
-            <div id="objects">
-             <div id="life">
-               <h3>Vida</h3>
-               <i  class="fa-solid fa-heart fa-beat" style="color: #fd2112;"></i>
-               <p>100%</p>
-             </div>
+      <div id="menu">
+        <h2>Menú</h2>
+        <div id="objects">
+          <div id="life">
+            <h3>Vida</h3>
+            <i class="fa-solid fa-heart fa-beat" style="color: #fd2112"></i>
+            <p>100%</p>
+          </div>
           <h3>Objetos</h3>
           <ul>
             <li>Objeto 1</li>
@@ -39,15 +41,14 @@
       </div>
 
       <button id="next" onclick="next()">Siguiente</button>
-      
-    <div id="option" style="display: none;">
-      <button class="optionA" onclick="optionA()">Avanzar</button>
-    </div>
 
-    <div class="audio-player">
-      <audio controls src="../../../music/levels/level-0/fire.mp3"></audio>
+      <div id="option" style="display: none">
+        <button class="optionA" onclick="optionA()">Avanzar</button>
+      </div>
+
+      <div class="audio-player">
+        <audio controls src="../../../music/levels/level-0/fire.mp3"></audio>
+      </div>
     </div>
-  
-</div>
-</body>
+  </body>
 </html>
