@@ -51,6 +51,7 @@ body {
         }
     #bodyText-history{
         padding: 10px;
+        max-height: 100%;
     }   
         #historyContainer {
             background-color: #ada9a9;
@@ -64,7 +65,7 @@ body {
         }
         
             #historyContainer p{
-                font-size: 100%;
+                font-size: 1.2vh;
             }
 
         #bodyText-buttons{
@@ -175,15 +176,16 @@ body {
                     "1A 2A"
                     "1B 2B"
                     "1C 2C";
-                grid-template-columns: 30% auto;
+                grid-template-columns: 50% 50%;
                 grid-template-rows: 1fr 1fr 1fr;
+                grid-column-gap: 10px;
             }
 
             
             .inventoryImgContainer{
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: right;
             }
 
 
@@ -280,6 +282,36 @@ body {
 }
 
 #button-next:hover {
+    box-shadow: 0 0 10px #db2828, 0 0 80px #db2828, 0 0 120px #db2828;
+}
+
+#optionA {
+    display: none;
+    color: #fff8f8;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: 0.2s;
+    background: #db2828;
+    box-shadow: 0 0 10px #db2828, 0 0 40px #db2828, 0 0 80px #db2828;
+}
+
+#optionA:hover {
+    box-shadow: 0 0 10px #db2828, 0 0 80px #db2828, 0 0 120px #db2828;
+}
+
+#optionB {
+    display: none;
+    color: #fff8f8;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: 0.2s;
+    background: #db2828;
+    box-shadow: 0 0 10px #db2828, 0 0 40px #db2828, 0 0 80px #db2828;
+}
+
+#optionB:hover {
     box-shadow: 0 0 10px #db2828, 0 0 80px #db2828, 0 0 120px #db2828;
 }
 

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L.C.D-GAME</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="initScript.js"></script>
 <link rel="stylesheet" href="estilos.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.3.3/howler.min.js"></script>
 </head>
@@ -23,15 +22,15 @@
 
             <div id="bodyText-history" class="mostrarBorde">
                 <div id="historyContainer">
-                    <p id="historyText">Caminar por este sitio es todo lo que sabes hacer, tus recuerdos no son más que fragmentos dispersos, 
-                        lo que alguna vez fuistes ya no existe y los únicos recuerdos que logras recordar es caminar por un mar de llamas que devora todo lo que está a su paso.</p>
+                    <p id="historyText"></p>
                 </div>
+                
             </div>
 
             <div id="bodyText-buttons" class="mostrarBorde">
                 <button id="button-next" >Siguiente</button>
-                <button class="optionA" >Avanzar</button>
-                <button class="optionB" >Quedarse</button>
+                <button id="optionA" >Avanzar</button>
+                <button id="optionB" >Quedarse</button>
               
             </div>
 
@@ -117,6 +116,7 @@
 
         </div>
     </div>
+    <script src="initScript.js"></script>
 </body>
 <script type="module" src="main.js"></script>
 </html>
