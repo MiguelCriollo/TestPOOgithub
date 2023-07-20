@@ -54,11 +54,19 @@ body {
     width: 100%;
 }
 
-.center-text {
+/* .center-text {
     font-size: 50px;
     color: black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+} */
+
+.center-text {
+    font-family: 'Monoton', cursive;
+    font-size: 65px;
+    color: #000000;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
+
 
 .boton {
     position: absolute;
@@ -68,6 +76,20 @@ body {
     border-radius: 15%;
     background-color: black;
     cursor: pointer;
+}
+
+button:hover {
+    background-color: #6fc5ff;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+}
+
+button:active {
+    background-color: #3d94cf;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
 }
 
 .txt-btn {
