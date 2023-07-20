@@ -31,5 +31,8 @@ function activatePrinting(){
         intervalo=setInterval(test, 1);
 }
 
+/****BOTONES******/
+
+
 
   
