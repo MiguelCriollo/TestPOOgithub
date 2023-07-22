@@ -62,10 +62,13 @@ body {
             color: rgb(255, 255, 255);
             height: 100%;
             padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
             #historyContainer p{
-                font-size: 1.2vh;
+                font-size: 3vh;
             }
 
         #bodyText-buttons{
