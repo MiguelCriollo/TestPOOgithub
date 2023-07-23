@@ -5,7 +5,8 @@
         'Tus pasos se detienen, no por ti, si no por una mano que te sujeta con desesperación, al mirar a la dueña de esta mano, la esperanza comenzó a surgir en los ojos de aquella chica, pero tu no ves eso, en lo que te concentras es como un muro de concreto está aplastando los pies de la chica.',
         'Es imposible salvarla, lo sabes, no hay nada en lo que puedas ayudarla, entonces haces lo único que puedes hacer, sigues caminando ignorando las súplicas de salvación que la chica grita desgarrando su garganta por el smog en el aire por la carne quemada, con cada paso que das sus súplicas se convierten en gritos, y los gritos en maldiciones, ella te desea la muerte por dejarla abandonada.',
         'Tus pensamientos se detienen, nada bueno sale recordando, por eso sigues caminando por este lugar, un lugar donde no hay algún sentido del tiempo, donde tu existencia no es más que una anormalidad, un sitio donde solo hay un infinito sin nada, no sabes el porque caminas, no tienes ambiciones.',
-        'Lo que alguna vez fuiste ya no existe para utilizarlo como motor, aun así dudas en seguir caminando sabiendo que sería inutil, sin embargo sigues caminando ya que es lo único que puedes hacer, porque sabes que debe haber algo más allá de toda la nada que te rodea.'
+        'Lo que alguna vez fuiste ya no existe para utilizarlo como motor, aun así dudas en seguir caminando sabiendo que sería inutil, sin embargo sigues caminando ya que es lo único que puedes hacer, porque sabes que debe haber algo más allá de toda la nada que te rodea.',
+        'Todas tus decisiones te han llevado a este punto, lo que vendra dependera solo de ti, ¿Que haras ahora?'
       ],
     D1: {
         text: `Seguir avanzando`,
@@ -16,7 +17,7 @@
         text: `Quedarse`,
         postD:`Sigues esperando un rumbo al que ir por toda la eternidad.`
     },
-    post:`Al dejar de lado las dudas que atormentan tu mente sigues caminando, aunque tú mismo sabes que es falso, siempre tendrás dudas pero eso no quiere decir que no puedes seguir avanzando por este camino que has elegido recorrer, la pregunta será, ¿podrás llegar hasta el final?`
+    finalText:`Al dejar de lado las dudas que atormentan tu mente sigues caminando, aunque tú mismo sabes que es falso, siempre tendrás dudas pero eso no quiere decir que no puedes seguir avanzando por este camino que has elegido recorrer, la pregunta será, ¿podrás llegar hasta el final?`
 
 }
 
