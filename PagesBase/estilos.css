@@ -62,10 +62,13 @@ body {
             color: rgb(255, 255, 255);
             height: 100%;
             padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
             #historyContainer p{
-                font-size: 1.2vh;
+                font-size: 3vh;
             }
 
         #bodyText-buttons{
@@ -112,7 +115,7 @@ body {
             overflow: hidden;
         }
             #bodyPlayer-playerDescription p{
-                font-size: 100%;
+                font-size: 1.5vh;
                 color: #fff;
                 margin: 0;
                 text-align: justify;
@@ -268,32 +271,34 @@ body {
 
 
 
-
-
-
-#button-next {
+.buttonStyles{
     color: #fff8f8;
-    letter-spacing: 4px;
+    padding: 5px;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 3vh;
     transition: 0.2s;
     background: #db2828;
     box-shadow: 0 0 10px #db2828, 0 0 40px #db2828, 0 0 80px #db2828;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+}
+
+
+#button-next:active{
+    animation: shake 0.3s;
+}
+#button-next:disabled{
+    opacity: 0.5;
+    background: #5e1313;
 }
 
 #button-next:hover {
-    box-shadow: 0 0 10px #db2828, 0 0 80px #db2828, 0 0 120px #db2828;
+    box-shadow: 0 0 10px #6c3131, 0 0 80px #db2828, 0 0 120px #db2828;
 }
 
 #optionA {
     display: none;
-    color: #fff8f8;
-    letter-spacing: 4px;
-    text-decoration: none;
-    font-size: 24px;
-    transition: 0.2s;
-    background: #db2828;
-    box-shadow: 0 0 10px #db2828, 0 0 40px #db2828, 0 0 80px #db2828;
+    
 }
 
 #optionA:hover {
@@ -302,13 +307,7 @@ body {
 
 #optionB {
     display: none;
-    color: #fff8f8;
-    letter-spacing: 4px;
-    text-decoration: none;
-    font-size: 24px;
-    transition: 0.2s;
-    background: #db2828;
-    box-shadow: 0 0 10px #db2828, 0 0 40px #db2828, 0 0 80px #db2828;
+
 }
 
 #optionB:hover {
@@ -391,3 +390,11 @@ body {
     cursor: pointer;
 }
 */
+/************Animations**********************/
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
