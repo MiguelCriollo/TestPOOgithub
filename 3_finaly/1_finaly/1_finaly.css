@@ -1,77 +1,78 @@
+/* Resetear los márgenes y el padding del body */
 body {
     margin: 0;
     padding: 0;
 }
 
+/* Estilos para la imagen principal */
 .img {
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #baadad;
 }
 
 .img_prin {
-    position: static;
     width: 100%;
     height: 100%;
-    background: #baadad;
+    object-fit: cover;
+    object-position: center;
 }
 
-.padre {
-    border-radius: 100px;
-    background: rgba(48, 46, 46, 0.363);
-}
-
-.img_prin {
-    display: block;
-    margin: 0 auto;
-    position: relative;
-}
-
-.texto {
-    height: 20%;
+/* Estilos para el título */
+.center-text {
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    background: rgba(0, 0, 0, 0.377);
-    border-radius: 55px;
+    transform: translate(-50%);
+    font-family: 'Monoton', cursive;
+    font-size: 65px;
+    color: #000000;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
+/* Estilos para el texto del mensaje */
 .Tex_1 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%, -50%);
     font-size: 30px;
     font-weight: bold;
-}
-
-.purga {
-    font-size: 63px;
-}
-
-.title {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    color: #ffffff;
     text-align: center;
-    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 55px;
+    padding: 20px;
 }
 
-.center-text {
-    font-size: 50px;
-    color: black;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-}
-
+/* Estilos para el botón */
 .boton {
     position: absolute;
-    bottom: 10px;
+    bottom: 10%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(- 50%);
+    display: block;
+    padding: 15px 30px;
     border-radius: 15%;
     background-color: black;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: monospace;
     cursor: pointer;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-.txt-btn {
-    font-size: 18px;
-    color: aliceblue;
-    font-family: monospace;
+/* Efecto hover para el botón */
+.boton:hover {
+    background-color: #6fc5ff;
+    transform: scale(1.1);
+}
+
+/* Efecto active para el botón */
+.boton:active {
+    background-color: #3d94cf;
+    transform: scale(0.98);
 }
