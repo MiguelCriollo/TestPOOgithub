@@ -1,5 +1,5 @@
 function redireccion() {
-    window.location.href = "/levels/level-0/history/history.html";
+    window.location.href = "/index.html";
   }
   document.addEventListener("DOMContentLoaded", function () {
     var audioPlayer = document.getElementById("audio-player");
