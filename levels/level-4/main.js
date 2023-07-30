@@ -44,6 +44,9 @@ function nextPage(){
             clearInterval(intervalo); // Detener el intervalo cuando la opacidad sea 0
         }
     }, 50);
+    setTimeout(function() {
+        window.location.href = "../level-5-cross/First/five.html";
+    }, 3000);
 }
 
 /****BOTONES******/
@@ -81,6 +84,7 @@ function optionsButtonClick(event){
     if(event.target.id==="optionA"){
         printTextInto(text.D1.postD,historyText);
         decisionTaken=true;
+        playerObjects=[true,false,false]
     }else{
         printTextInto(text.D2.postD,historyText);
     }

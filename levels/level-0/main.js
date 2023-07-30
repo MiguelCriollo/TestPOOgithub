@@ -1,5 +1,7 @@
 import {text} from "./texto.js";
 
+playerObjects=[false,false,false];
+
 const historyText = document.getElementById("historyText"); //Parrafo de la historia
 const nextButton=document.getElementById("button-next"); //Boton de Continuar
 const deleteActualText=()=>{ //Borrar contenido
@@ -44,6 +46,10 @@ function nextPage(){
             clearInterval(intervalo); // Detener el intervalo cuando la opacidad sea 0
         }
     }, 50);
+    setTimeout(function() {
+        window.location.href = "../level-1/first.html";
+    }, 3000);
+      
 }
 
 /****BOTONES******/
