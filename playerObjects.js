@@ -1,0 +1,1 @@
+var playerObjects=[false,false,false]

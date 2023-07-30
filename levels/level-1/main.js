@@ -44,6 +44,9 @@ function nextPage(){
             clearInterval(intervalo); // Detener el intervalo cuando la opacidad sea 0
         }
     }, 50);
+    setTimeout(function() {
+        window.location.href = "../level-2/second.html";
+    }, 3000);
 }
 
 /****BOTONES******/
