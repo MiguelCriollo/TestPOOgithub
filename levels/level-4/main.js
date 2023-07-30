@@ -62,13 +62,14 @@ function nextPage(){
             clearInterval(intervalo); // Detener el intervalo cuando la opacidad sea 0
         }
     }, 50);
+    console.log("AYUDA");
     if(optioAPage===true){
         setTimeout(function() {
             window.location.href = "../level-5/level-5-lance/First/five.html";
         }, 3000);
     }else{
         setTimeout(function() {
-            window.location.href = "../level-5-cross/First/five.thml";
+            window.location.href = "../level-5-cross/First/five.html";
         }, 3000);
     }
 
