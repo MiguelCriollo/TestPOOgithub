@@ -103,7 +103,7 @@ body {
         
     }
         #bodyPlayer-namePlayer p{
-            font-size: 100%;
+            font-size: 2vh;
             color: white;
             font-weight: bold; /* Negrita */
             text-transform: uppercase;
@@ -137,7 +137,7 @@ body {
                 font-weight: bold; /* Negrita */
                 text-transform: uppercase; /* Mayúsculas */
                 color: white;
-                font-size: 100%;
+                font-size: 1.5vh;
             }
         
         #bodyPlayer-life{
@@ -146,13 +146,13 @@ body {
             justify-content: center;
             flex-direction: column;
         }
-            #bodyPlayer-life h3{
+            #bodyPlayer-life-title h3{
                 color: white;
-                font-size: 100%;
+                font-size: 2.5vh;
             }
-            #bodyPlayer-life p{
+            #bodyPlayer-life-percentage p{
                 color: white;
-                font-size: 100%;
+                font-size: 2vh;
             }
    
         #bodyPlayer-inventory{
@@ -207,7 +207,7 @@ body {
             }
 
                 #obj1Texto p{
-                    font-size: 1vh;
+                    font-size: 1.5vh;
                     font-weight: bold; /* Negrita */
                     text-transform: uppercase; /* Mayúsculas */
                     color: white;
@@ -229,7 +229,7 @@ body {
                 justify-content: left;
             }
                 #obj2Texto p{
-                    font-size: 1vh;
+                    font-size: 1.5vh;
                     font-weight: bold; /* Negrita */
                     text-transform: uppercase; /* Mayúsculas */
                     color: white;
@@ -249,7 +249,7 @@ body {
                 justify-content: left;
             }
                 #obj3Texto p{
-                    font-size: 1vh;
+                    font-size: 1.5vh;
                     font-weight: bold; /* Negrita */
                     text-transform: uppercase; /* Mayúsculas */
                     color: white;
