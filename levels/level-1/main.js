@@ -1,4 +1,21 @@
 import {text} from "./texto.js";
+import {globalObject} from "../../playerObjects.js";
+
+if(globalObject.playerObjects[0]===false){
+    document.getElementById("obj1Img").style.display="none";
+}else{
+    document.getElementById("obj1Img").style.display="block";
+}
+if(globalObject.playerObjects[1]===false){
+    document.getElementById("obj2Img").style.display="none";
+}else{
+    document.getElementById("obj2Img").style.display="block";
+}
+if(globalObject.playerObjects[2]===false){
+    document.getElementById("obj3Img").style.display="none";
+}else{
+    document.getElementById("obj3Img").style.display="block";
+}
 
 const historyText = document.getElementById("historyText"); //Parrafo de la historia
 const nextButton=document.getElementById("button-next"); //Boton de Continuar
@@ -86,6 +103,7 @@ function optionsButtonClick(event){
         decisionTaken=true;
     }else{
         printTextInto(text.D2.postD,historyText);
+        //COLOCAR AQUI PANTALLA MUERTE
     }
 }
 

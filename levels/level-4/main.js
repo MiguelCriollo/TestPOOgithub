@@ -1,4 +1,21 @@
 import {text} from "./texto.js";
+import {globalObject} from "../../playerObjects.js";
+
+if(globalObject.playerObjects[0]===false){
+    document.getElementById("obj1Img").style.display="none";
+}else{
+    document.getElementById("obj1Img").style.display="block";
+}
+if(globalObject.playerObjects[1]===false){
+    document.getElementById("obj2Img").style.display="none";
+}else{
+    document.getElementById("obj2Img").style.display="block";
+}
+if(globalObject.playerObjects[2]===false){
+    document.getElementById("obj3Img").style.display="none";
+}else{
+    document.getElementById("obj3Img").style.display="block";
+}
 
 const historyText = document.getElementById("historyText"); //Parrafo de la historia
 const nextButton=document.getElementById("button-next"); //Boton de Continuar
@@ -14,6 +31,7 @@ optionB_Button.textContent=text.D2.text;
 let countForInitialText=0; //Contador para recorrer todos los textos
 let decisionTaken=false;
 let activateNextPage=false;
+let optioAPage=false;
 
 function inabilitateButton(button,boolean){
     button.disabled = boolean;
@@ -44,9 +62,16 @@ function nextPage(){
             clearInterval(intervalo); // Detener el intervalo cuando la opacidad sea 0
         }
     }, 50);
-    setTimeout(function() {
-        window.location.href = "../level-5-cross/First/five.html";
-    }, 3000);
+    if(optioAPage===true){
+        setTimeout(function() {
+            window.location.href = "../level-5/level-5-lance/First/five.html";
+        }, 3000);
+    }else{
+        setTimeout(function() {
+            window.location.href = "../level-5-cross/First/five.thml";
+        }, 3000);
+    }
+
 }
 
 /****BOTONES******/
@@ -83,11 +108,12 @@ function optionsButtonClick(event){
 
     if(event.target.id==="optionA"){
         printTextInto(text.D1.postD,historyText);
-        decisionTaken=true;
-        playerObjects=[true,false,false]
+        optioAPage=true;
     }else{
         printTextInto(text.D2.postD,historyText);
+        optioAPage=false;
     }
+    decisionTaken=true;
 }
 
 nextButton.addEventListener("click",nextButtonClick);

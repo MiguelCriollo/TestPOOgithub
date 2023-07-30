@@ -1,1 +1,3 @@
-var playerObjects=[false,false,false]
+export let globalObject = {
+    playerObjects:[false,false,false]
+}
