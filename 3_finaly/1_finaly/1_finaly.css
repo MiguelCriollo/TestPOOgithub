@@ -1,100 +1,78 @@
+/* Resetear los márgenes y el padding del body */
 body {
-    font-family: monospace;
-    height: 100vh;
     margin: 0;
     padding: 0;
-    background-image: url("/imagenes/cielo.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+}
+
+/* Estilos para la imagen principal */
+.img {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.img {
-    margin: auto;
+    height: 100vh;
+    background-color: #baadad;
 }
 
 .img_prin {
-    position: static;
     width: 100%;
     height: 100%;
-    background: #baadad;
+    object-fit: cover;
+    object-position: center;
 }
 
-.padre {
-    border-radius: 100px;
-    background: rgba(48, 46, 46, 0.363);
-}
-
-.img_prin {
-    display: block;
-    margin: 0 auto;
-    position: relative;
-}
-
-.texto {
-    height: 20%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    background: rgba(255, 255, 255, 0.377);
-    border-radius: 55px;
-}
-
-.Tex_1 {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.title {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    width: 100%;
-}
-
+/* Estilos para el título */
 .center-text {
-    color: #020608;
-    text-shadow: 3px -3px #000000, 3px 3px #ffffff, 3px 3px #ffffff, 3px 3px #080808, 6px 6px #000000;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 54px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: 'Monoton', cursive;
+    font-size: 65px;
+    color: #000000;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
+/* Estilos para el texto del mensaje */
+.Tex_1 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%, -50%);
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 55px;
+    padding: 20px;
+}
+
+/* Estilos para el botón */
 .boton {
     position: absolute;
-    bottom: 10px;
+    bottom: 10%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(- 50%);
+    display: block;
+    padding: 15px 30px;
     border-radius: 15%;
     background-color: black;
-    cursor: pointer;
-}
-
-.boton:hover {
-    transform: scale(1);
-}
-
-.txt-btn {
+    color: #ffffff;
     font-size: 18px;
-    color: aliceblue;
     font-family: monospace;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-/* Estilos para el reproductor de audio */
-audio {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    z-index: 9999;
-    /* Asegura que el reproductor esté por encima de otros elementos */
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 50px;
+/* Efecto hover para el botón */
+.boton:hover {
+    background-color: #6fc5ff;
+    transform: scale(1.1);
+}
+
+/* Efecto active para el botón */
+.boton:active {
+    background-color: #3d94cf;
+    transform: scale(0.98);
 }

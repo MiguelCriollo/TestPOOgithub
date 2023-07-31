@@ -1,116 +1,116 @@
-import { text } from "./texto.js";
-import { globalObject } from "../../playerObjects.js";
+import {text} from "./texto.js";
+import {globalObject} from "../../playerObjects.js";
 
-if (globalObject.playerObjects[0] === false) {
-  document.getElementById("obj1Img").style.display = "none";
-} else {
-  document.getElementById("obj1Img").style.display = "block";
+if(globalObject.playerObjects[0]===false){
+    document.getElementById("obj1Img").style.display="none";
+}else{
+    document.getElementById("obj1Img").style.display="block";
 }
-if (globalObject.playerObjects[1] === false) {
-  document.getElementById("obj2Img").style.display = "none";
-} else {
-  document.getElementById("obj2Img").style.display = "block";
+if(globalObject.playerObjects[1]===false){
+    document.getElementById("obj2Img").style.display="none";
+}else{
+    document.getElementById("obj2Img").style.display="block";
 }
-if (globalObject.playerObjects[2] === false) {
-  document.getElementById("obj3Img").style.display = "none";
-} else {
-  document.getElementById("obj3Img").style.display = "block";
+if(globalObject.playerObjects[2]===false){
+    document.getElementById("obj3Img").style.display="none";
+}else{
+    document.getElementById("obj3Img").style.display="block";
 }
 
 const historyText = document.getElementById("historyText"); //Parrafo de la historia
-const nextButton = document.getElementById("button-next"); //Boton de Continuar
-const deleteActualText = () => {
-  //Borrar contenido
-  historyText.textContent = "";
+const nextButton=document.getElementById("button-next"); //Boton de Continuar
+const deleteActualText=()=>{ //Borrar contenido
+    historyText.textContent="";
 };
-const optionA_Button = document.getElementById("optionA");
-const optionB_Button = document.getElementById("optionB");
+const optionA_Button=document.getElementById("optionA");
+const optionB_Button=document.getElementById("optionB");
 
-optionA_Button.textContent = text.D1.text;
-optionB_Button.textContent = text.D2.text;
+optionA_Button.textContent=text.D1.text;
+optionB_Button.textContent=text.D2.text;
 
-let countForInitialText = 0; //Contador para recorrer todos los textos
-let decisionTaken = false;
-let activateNextPage = false;
+let countForInitialText=0; //Contador para recorrer todos los textos
+let decisionTaken=false;
+let activateNextPage=false;
 
-function inabilitateButton(button, boolean) {
-  button.disabled = boolean;
+function inabilitateButton(button,boolean){
+    button.disabled = boolean;
 }
-
-function printTextInto(textToPrint, printInto) {
-  let intervalo,
-    cont = 0;
-  function printLoop() {
-    printInto.textContent += textToPrint[cont];
-    cont++;
-    textToPrint[cont] ??
-      (clearInterval(intervalo), inabilitateButton(nextButton, false));
-  }
-  intervalo = setInterval(printLoop, 3);
-}
-
-function initialPrinting() {
-  deleteActualText();
-  printTextInto(text.initial[countForInitialText], historyText);
-  countForInitialText++;
-}
-
-function nextPage() {
-  let opacidad = 1;
-  const intervalo = setInterval(() => {
-    opacidad -= 0.05;
-    document.body.style.opacity = opacidad;
-    if (opacidad <= 0) {
-      clearInterval(intervalo); // Detener el intervalo cuando la opacidad sea 0
+    
+function printTextInto(textToPrint,printInto){
+    let intervalo,cont=0;
+    function printLoop(){
+        printInto.textContent+=textToPrint[cont];
+        cont++;
+        textToPrint[cont]??(clearInterval(intervalo),inabilitateButton(nextButton,false));
     }
-  }, 50);
-  setTimeout(function () {
-    window.location.href = "../level-3/three.html";
-  }, 3000);
+    intervalo=setInterval(printLoop, 3);
+}
+
+function initialPrinting(){
+    deleteActualText();
+    printTextInto(text.initial[countForInitialText],historyText);
+    countForInitialText++;
+}
+
+function nextPage(){
+    let opacidad = 1;
+    const intervalo = setInterval(() => {
+        opacidad -= 0.05;
+        document.body.style.opacity = opacidad;
+        if (opacidad <= 0) {
+            clearInterval(intervalo); // Detener el intervalo cuando la opacidad sea 0
+        }
+    }, 50);
+    setTimeout(function() {
+        window.location.href = "../level-3/three.html";
+    }, 3000);
 }
 
 /****BOTONES******/
 
-function nextButtonClick() {
-  inabilitateButton(nextButton, true);
+function nextButtonClick(){
 
-  if (!decisionTaken) {
-    initialPrinting();
-    if (countForInitialText >= text.initial.length) {
-      optionA_Button.style.display = "block";
-      optionB_Button.style.display = "block";
-      nextButton.style.display = "none";
+    inabilitateButton(nextButton,true);
+
+    if(!decisionTaken){
+        initialPrinting();
+        if(countForInitialText >= text.initial.length){
+            optionA_Button.style.display="block";
+            optionB_Button.style.display="block";
+            nextButton.style.display="none";
+        }
+    }else{
+        deleteActualText();
+        if(!activateNextPage){
+            activateNextPage=true;
+            printTextInto(text.finalText,historyText);
+        }else{
+            nextPage();
+        }    
     }
-  } else {
+}
+
+
+
+function optionsButtonClick(event){
     deleteActualText();
-    if (!activateNextPage) {
-      activateNextPage = true;
-      printTextInto(text.finalText, historyText);
-    } else {
-      nextPage();
+    optionA_Button.style.display="none";
+    optionB_Button.style.display="none";
+    nextButton.style.display="block";
+
+    if(event.target.id==="optionb"){
+        printTextInto(text.D1.postD,historyText);
+        //COLOCAR AQUI PANTALLA MUERTE
+    }else{
+        printTextInto(text.D2.postD,historyText);
+        decisionTaken=true;
     }
-  }
 }
 
-function optionsButtonClick(event) {
-  deleteActualText();
-  optionA_Button.style.display = "none";
-  optionB_Button.style.display = "none";
-  nextButton.style.display = "block";
-
-  if (event.target.id === "optionb") {
-    printTextInto(text.D1.postD, historyText);
-    //COLOCAR AQUI PANTALLA MUERTE
-  } else {
-    printTextInto(text.D2.postD, historyText);
-    decisionTaken = true;
-  }
-}
-
-nextButton.addEventListener("click", nextButtonClick);
-optionA_Button.addEventListener("click", optionsButtonClick);
-optionB_Button.addEventListener("click", optionsButtonClick);
-
+nextButton.addEventListener("click",nextButtonClick);
+optionA_Button.addEventListener("click",optionsButtonClick);
+optionB_Button.addEventListener("click",optionsButtonClick);
+  
 /*
 Para desbordamiento:
 let contenedorParrafo=document.getElementById("historyContainer");
