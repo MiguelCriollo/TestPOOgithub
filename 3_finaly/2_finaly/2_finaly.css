@@ -1,6 +1,15 @@
 body {
+    font-family: monospace;
+    height: 100vh;
     margin: 0;
     padding: 0;
+    background-image: url("/imagenes/PURGATORIO.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .img {
@@ -67,10 +76,23 @@ body {
     transform: translateX(-50%);
     border-radius: 15%;
     background-color: black;
-    cursor: pointer;}
+    cursor: pointer;
+}
 
 .txt-btn {
     font-size: 18px;
     color: aliceblue;
-    font-family:monospace;
+    font-family: monospace;
+}
+
+audio {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999;
+    /* Asegura que el reproductor esté por encima de otros elementos */
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 50px;
 }
