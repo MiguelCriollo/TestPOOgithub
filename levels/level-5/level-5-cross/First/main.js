@@ -1,33 +1,13 @@
 import {text} from "./texto.js";
 
-import {globalObject} from "../../playerObjects.js";
 
-if(globalObject.playerObjects[0]===false){
-    document.getElementById("obj1Img").style.display="none";
-}else{
-    document.getElementById("obj1Img").style.display="block";
-}
-if(globalObject.playerObjects[1]===false){
-    document.getElementById("obj2Img").style.display="none";
-}else{
-    document.getElementById("obj2Img").style.display="block";
-}
-if(globalObject.playerObjects[2]===false){
-    document.getElementById("obj3Img").style.display="none";
-}else{
-    document.getElementById("obj3Img").style.display="block";
-}
 
 const historyText = document.getElementById("historyText"); //Parrafo de la historia
 const nextButton=document.getElementById("button-next"); //Boton de Continuar
 const deleteActualText=()=>{ //Borrar contenido
     historyText.textContent="";
 };
-const optionA_Button=document.getElementById("optionA");
-const optionB_Button=document.getElementById("optionB");
 
-optionA_Button.textContent=text.D1.text;
-optionB_Button.textContent=text.D2.text;
 
 let countForInitialText=0; //Contador para recorrer todos los textos
 let decisionTaken=false;
@@ -42,7 +22,7 @@ function printTextInto(textToPrint,printInto){
     function printLoop(){
         printInto.textContent+=textToPrint[cont];
         cont++;
-        textToPrint[cont]??(clearInterval(intervalo),inabilitateButton(nextButton,false));
+        textToPrint[cont]??(clearInterval(intervalo),inabilitateButton(nextButton,false),nextPage);
     }
     intervalo=setInterval(printLoop, 3);
 }
@@ -62,6 +42,9 @@ function nextPage(){
             clearInterval(intervalo); // Detener el intervalo cuando la opacidad sea 0
         }
     }, 50);
+    setTimeout(function() {
+        window.location.href = "../level-5/level-5-cross/First/five.html";
+    }, 3000);
 }
 
 /****BOTONES******/
@@ -96,18 +79,11 @@ function optionsButtonClick(event){
     optionB_Button.style.display="none";
     nextButton.style.display="block";
 
-    if(event.target.id==="optionA"){
-        printTextInto(text.D1.postD,historyText);
-        decisionTaken=true;
-    }else{
-        printTextInto(text.D2.postD,historyText);
-    }
+    printTextInto(text.initial,historyText);
 }
 
 nextButton.addEventListener("click",nextButtonClick);
-optionA_Button.addEventListener("click",optionsButtonClick);
-optionB_Button.addEventListener("click",optionsButtonClick);
-  
+
 /*
 Para desbordamiento:
 let contenedorParrafo=document.getElementById("historyContainer");

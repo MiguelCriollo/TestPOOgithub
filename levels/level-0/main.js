@@ -1,19 +1,17 @@
 import {text} from "./texto.js";
-import {globalObject} from "../../playerObjects.js";
-
-globalObject.playerObjects=[false,false,false]
-
-if(globalObject.playerObjects[0]===false){
+import {getPlayerObject, updatePlayerObject} from "../../playerObjects.js";
+let playerObjects = getPlayerObject();
+if(playerObjects[0]===false){
     document.getElementById("obj1Img").style.display="none";
 }else{
     document.getElementById("obj1Img").style.display="block";
 }
-if(globalObject.playerObjects[1]===false){
+if(playerObjects[1]===false){
     document.getElementById("obj2Img").style.display="none";
 }else{
     document.getElementById("obj2Img").style.display="block";
 }
-if(globalObject.playerObjects[2]===false){
+if(playerObjects[2]===false){
     document.getElementById("obj3Img").style.display="none";
 }else{
     document.getElementById("obj3Img").style.display="block";
@@ -65,6 +63,11 @@ function nextPage(){
             clearInterval(intervalo); // Detener el intervalo cuando la opacidad sea 0
         }
     }, 50);
+
+    
+    let newList=[true,false,false]
+    updatePlayerObject(newList);
+    console.log(getPlayerObject());
     setTimeout(function() {
         window.location.href = "../level-1/first.html";
     }, 3000);
@@ -106,7 +109,7 @@ function optionsButtonClick(event){
     if(event.target.id==="optionA"){
         printTextInto(text.D1.postD,historyText);
         decisionTaken=true;
-        globalObject.playerObjects=[true,false,false]
+        playerObjects=[true,false,false]
     }else{
         printTextInto(text.D2.postD,historyText);
         //COLOCAR AQUI PANTALLA MUERTE

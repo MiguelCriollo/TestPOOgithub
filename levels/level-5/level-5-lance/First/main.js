@@ -1,22 +1,7 @@
 import {text} from "./texto.js";
 
-import {globalObject} from "../../playerObjects.js";
 
-if(globalObject.playerObjects[0]===false){
-    document.getElementById("obj1Img").style.display="none";
-}else{
-    document.getElementById("obj1Img").style.display="block";
-}
-if(globalObject.playerObjects[1]===false){
-    document.getElementById("obj2Img").style.display="none";
-}else{
-    document.getElementById("obj2Img").style.display="block";
-}
-if(globalObject.playerObjects[2]===false){
-    document.getElementById("obj3Img").style.display="none";
-}else{
-    document.getElementById("obj3Img").style.display="block";
-}
+let optioAPage=false;
 
 const historyText = document.getElementById("historyText"); //Parrafo de la historia
 const nextButton=document.getElementById("button-next"); //Boton de Continuar
@@ -62,6 +47,15 @@ function nextPage(){
             clearInterval(intervalo); // Detener el intervalo cuando la opacidad sea 0
         }
     }, 50);
+    if(optioAPage===true){
+        setTimeout(function() {
+            window.location.href = "../Second/Kill/kill.html";
+        }, 3000);
+    }else{
+        setTimeout(function() {
+            window.location.href = "../Second/Save/save.html";
+        }, 3000);
+    }
 }
 
 /****BOTONES******/
@@ -99,8 +93,11 @@ function optionsButtonClick(event){
     if(event.target.id==="optionA"){
         printTextInto(text.D1.postD,historyText);
         decisionTaken=true;
+        optioAPage=true
     }else{
         printTextInto(text.D2.postD,historyText);
+        decisionTaken=true;
+        optioAPage=false;
     }
 }
 
