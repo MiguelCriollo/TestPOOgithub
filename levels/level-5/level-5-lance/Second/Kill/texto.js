@@ -30,3 +30,4 @@
     Algo dentro de ti reniega esa decisión, pero la elección ya está hecha, apartando la mirada de los ojos del hombre, bajas la lanza perforando el cráneo de la bestia, al cerrar tus ojos, escuchas el sonido de la carne siendo cortada y el como la existencia de alguien se extingue.
     Salvaste a muchos, a costa de unos pocos.`
 }
+//Conectar al level-6-bad

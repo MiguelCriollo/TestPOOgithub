@@ -1,0 +1,10 @@
+ export const text={
+    initial: [
+        `Pero no te arrepientes de nada, lograste salvar a muchas personas de aquel sitio, a pesar de que algunas decidieron quedarse ahí, no sabes qué sentir por ellos que decidieron quedarse atrás, a pesar de haber estado ardiendo por quien sabe cuanto tiempo, prefirieron quedarse con el demonio conocido que ser arrastrados a otro sitio donde pueden pasarla peor.
+        “No todos merecen ser salvados, o no todos quieren ser salvados” fueron las palabras de un hombre viejo que se sento en un porche mirando un sol negro al horizonte, aun cuando su cuerpo de bajo de la cintura estaba ciendo incinerado por aquellas llamas, no pudo evitar pensar que ese señor logro encontrar un poco de paz en todo ese sufrimiento.`,
+        `Palabras sabias de un señor que no tiene nada mejor que hacer, que solo arder por toda una eternidad, o tal vez solo un anciano que perdió la cordura por tanto sufrimiento, no lo sabes y en un principio no tomaste sus palabras en consideración, pero no puedes evitar sentir que tiene algo de verdad.
+        Porque desde que descendió a este infierno, ni una sola vez a podido salvar a alguien más, no fue por falta de intentos, fue porque las personas que el salvo decidieron enfrentar sus demonios ellos solos, y así uno por uno se fueron por sus propios caminos tratando de reencontrar su realización una vez más para seguir avanzando.`
+            ],
+          finalText: `No puedes evitar sentir temor por lo que les pasara, sientes que si no estas cerca algo malo podría pasarles, pero no puedes ir en contra de sus deseos, ellos decidieron esto, tratan de salvarse a sí mismos, de no depender de otros y por lo tanto se fueron, pero no sin agradecer antes el que los hayas salvado.
+          Con un suspiro dejas de lado ese pensamiento, no puedes hacer nada ahora, ellos se fueron y tú seguiste el camino que tus ideales forjaron.`
+      }
