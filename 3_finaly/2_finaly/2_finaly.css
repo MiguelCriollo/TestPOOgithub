@@ -1,6 +1,11 @@
 body {
     margin: 0;
     padding: 0;
+    background-image: url("/imagenes/infierno_gif.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .img {
@@ -56,21 +61,80 @@ body {
 
 .center-text {
     font-size: 50px;
-    color: red;
+    color: rgb(255, 255, 255);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .boton {
     position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 3%;
+    left: 40%;
+    transform: translateX(- 50%);
+    display: block;
+    padding: 10px 30px;
     border-radius: 15%;
     background-color: black;
-    cursor: pointer;}
+    color: #ffffff;
+    font-size: 18px;
+    font-family: monospace;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.boton:hover {
+    background-color: rgb(245, 22, 22);
+    transform: scale(1.1);
+}
+
+.boton:active {
+    background-color: #3d94cf;
+    transform: scale(0.98);
+}
+/* **************************************** */
+.boton_2 {
+    position: absolute;
+    bottom: 3%;
+    left: 65%;
+    transform: translateX(- 50%);
+    display: block;
+    padding: 10px 30px;
+    border-radius: 15%;
+    background-color: black;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: monospace;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.boton_2:hover {
+    background-color: #6fc5ff;
+    transform: scale(1.1);
+}
+
+.boton_2:active {
+    background-color: #3d94cf;
+    transform: scale(0.98);
+}
+
+/* ******************************************************************+ */
 
 .txt-btn {
     font-size: 18px;
     color: aliceblue;
-    font-family:monospace;
+    font-family: monospace;
+}
+
+audio {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999;
+    /* Asegura que el reproductor esté por encima de otros elementos */
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 50px;
 }
