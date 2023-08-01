@@ -31,4 +31,3 @@
       finalText:`Cuando llegas donde está el hombre puedes ver como la gratitud resplandece en sus ojos, no hace falta ni una palabra, ya sabes lo que quiere transmitir con solo su mirada.
       Con esfuerzo logras subirlo a tu espalda, sujetando la lanza en una mano y la otra como apoyo para evitar que el hombre caiga, sigues tu camino con pasos pesados, pero tu corazón, tu alma, tu misma existencia está en calma.`
 }
-//Conectar al level-6-normal
