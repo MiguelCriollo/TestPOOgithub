@@ -2,10 +2,12 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .padre {
     border-radius: 100px;
     background: rgba(255, 255, 255, 0.363);
 }
+
 .img {
     margin: auto;
 }
@@ -16,9 +18,10 @@ body {
     height: 100%;
     background: #baadad;
 }
+
 .texto {
-   
-    
+
+
     height: 20%;
     position: absolute;
     top: 50%;
@@ -28,6 +31,7 @@ body {
     background: rgba(0, 0, 0, 0.507);
     border-radius: 55px;
 }
+
 .Tex_1 {
     display: block;
     font-family: monospace;
@@ -35,27 +39,35 @@ body {
     border-right: 4px solid;
     animation: typing 2s steps(12), blink .5s infinite step-end;
     overflow: hidden;
-    
+
     font-size: 30px;
     font-weight: bold;
     color: #ffffff;
-   
+
 }
-@keyframes typing{
-    from {width: 0 ;}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
 }
+
 @keyframes blink {
-    50% {border-color: transparent;}
+    50% {
+        border-color: transparent;
+    }
 }
 
 .purga {
     font-size: 63px;
 }
+
 .img_prin {
     display: block;
     margin: 0 auto;
     position: relative;
 }
+
 .title {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.336), rgba(255, 255, 255, 0.267));
     position: absolute;
@@ -65,16 +77,17 @@ body {
     text-align: center;
     width: 100%;
 }
+
 .text {
     color: #ff0015;
     text-shadow: 3px -3px #000000, 3px 3px #ffffff, 3px 3px #ffffff, 3px 3px #080808, 6px 6px #000000;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 54px;
-    
+
 }
 
 .boton {
-    position:absolute;
+    position: absolute;
     bottom: 10px;
     left: 50%;
     transform: translateX(-100%);
