@@ -43,7 +43,7 @@ function nextPage(){
         }
     }, 50);
     setTimeout(function() {
-        window.location.href = "../level-5/level-5-cross/First/five.html";
+        window.location.href = "../../level-7/level-7-bad/seven.html";
     }, 3000);
 }
 

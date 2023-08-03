@@ -2,15 +2,11 @@
 body {
     margin: 0;
     padding: 0;
-}
-
-/* Estilos para la imagen principal */
-.img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #baadad;
+    background-image: url("/imagenes/Cielo_gidf.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .img_prin {
@@ -21,22 +17,22 @@ body {
 }
 
 /* Estilos para el título */
-.center-text {
+/* .center-text {
     position: absolute;
-    top: 20%;
-    left: 50%;
+    top: -8%;
+    left: 47.5%;
     transform: translate(-50%);
     font-family: 'Monoton', cursive;
-    font-size: 65px;
-    color: #000000;
+    font-size: 110px;
+    color: #ffffff;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-}
+} */
 
 /* Estilos para el texto del mensaje */
 .Tex_1 {
     position: absolute;
-    top: 60%;
-    left: 50%;
+    top: 40%;
+    left: 20%;
     transform: translateX(-50%, -50%);
     font-size: 30px;
     font-weight: bold;
@@ -44,17 +40,17 @@ body {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 55px;
-    padding: 20px;
+    padding: 50px;
 }
 
 /* Estilos para el botón */
 .boton {
     position: absolute;
-    bottom: 10%;
-    left: 50%;
+    bottom: 3%;
+    left: 40%;
     transform: translateX(- 50%);
     display: block;
-    padding: 15px 30px;
+    padding: 10px 30px;
     border-radius: 15%;
     background-color: black;
     color: #ffffff;
@@ -65,14 +61,109 @@ body {
     transition: background-color 0.3s, transform 0.3s;
 }
 
-/* Efecto hover para el botón */
 .boton:hover {
-    background-color: #6fc5ff;
+    background-color: rgb(255, 255, 255);
     transform: scale(1.1);
+    color: black;
+    font-size: larger;
 }
 
-/* Efecto active para el botón */
 .boton:active {
     background-color: #3d94cf;
     transform: scale(0.98);
+}
+
+/* ********************************** */
+
+.boto {
+    position: absolute;
+    bottom: 3%;
+    left: 65%;
+    transform: translateX(- 50%);
+    display: block;
+    padding: 10px 30px;
+    border-radius: 15%;
+    background-color: black;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: monospace;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+
+.boto:hover {
+    background-color: #ffffff;
+    transform: scale(1.1);
+    color: black;
+    font-size: larger;
+}
+
+.boto:active {
+    background-color: #3d94cf;
+    transform: scale(0.98);
+}
+
+/* ******************************************************************+ */
+
+audio {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+/* ************************************************ */
+/* Estilos para el título */
+.center-text {
+    position: absolute;
+    top: -8%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Monoton', cursive;
+    font-size: 110px;
+    color: #ffffff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para animar las letras */
+#darlingText {
+    display: inline-block;
+}
+
+#darlingText span {
+    display: inline-block;
+    animation: animateLetter 0.8s ease-in-out;
+}
+
+@keyframes animateLetter {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* *********************** Hacer que la pantalla se oscuresca */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    /* Inicialmente transparente */
+    pointer-events: none;
+    /* No captura eventos para permitir clics en los elementos debajo */
+    z-index: 9999;
+    /* Asegura que el overlay esté por encima de todo */
 }
