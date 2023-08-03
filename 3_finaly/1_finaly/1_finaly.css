@@ -61,6 +61,20 @@ body {
     transition: background-color 0.3s, transform 0.3s;
 }
 
+.boton:hover {
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.1);
+    color: black;
+    font-size: larger;
+}
+
+.boton:active {
+    background-color: #3d94cf;
+    transform: scale(0.98);
+}
+
+/* ********************************** */
+
 .boto {
     position: absolute;
     bottom: 3%;
@@ -93,18 +107,6 @@ body {
 
 /* ******************************************************************+ */
 
-.boton:hover {
-    background-color: rgb(255, 255, 255);
-    transform: scale(1.1);
-    color: black;
-    font-size: larger;
-}
-
-.boton:active {
-    background-color: #3d94cf;
-    transform: scale(0.98);
-}
-
 audio {
     position: fixed;
     bottom: 20px;
@@ -130,11 +132,11 @@ audio {
 }
 
 /* Estilos para animar las letras */
-#cieloText {
+#darlingText {
     display: inline-block;
 }
 
-#cieloText span {
+#darlingText span {
     display: inline-block;
     animation: animateLetter 0.8s ease-in-out;
 }
