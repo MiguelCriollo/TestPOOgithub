@@ -5,11 +5,13 @@ html{
     height: 100vh;
     margin: 0px;
     padding: 0;
+    
 }
 body {
     height: 100%;
     margin: 0;
     padding: 0;
+    opacity: 1;
   }
 /*************************/
 #bodySeparation{
@@ -398,3 +400,4 @@ body {
     75% { transform: translateX(-5px); }
     100% { transform: translateX(0); }
   }
+
