@@ -1,11 +1,13 @@
 :root {
     --glow-color: hsl(0, 85%, 52%);
 }
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
+
 body {
     background-image: url(/imagenes/Game.jpg);
     background-color: rgb(50, 50, 50);
@@ -54,18 +56,21 @@ body {
     flex-direction: column;
 
 }
+
 .frase {
     color: #fff;
     font-family: 'Cinzel', serif;
     margin-top: 60px;
     font-size: 1.5rem;
 }
-.fondo{
+
+.fondo {
     background-color: black;
     width: 350px;
     border-radius: 10%;
     margin-top: 150px;
 }
+
 .glowing-btn {
     position: relative;
     color: var(--glow-color);
@@ -162,24 +167,31 @@ body {
     0% {
         opacity: 0.1;
     }
+
     2% {
         opacity: 0.1;
     }
+
     4% {
         opacity: 0.5;
     }
+
     19% {
         opacity: 0.5;
     }
+
     21% {
         opacity: 0.1;
     }
+
     23% {
         opacity: 1;
     }
+
     80% {
         opacity: 0.5;
     }
+
     83% {
         opacity: 0.4;
     }
@@ -209,12 +221,15 @@ body {
     12% {
         opacity: 0.1;
     }
+
     20% {
         opacity: 1;
     }
+
     25% {
         opacity: 0.3;
     }
+
     30% {
         opacity: 1;
     }
@@ -222,6 +237,7 @@ body {
     70% {
         opacity: 0.7;
     }
+
     72% {
         opacity: 0.2;
     }
@@ -229,6 +245,7 @@ body {
     77% {
         opacity: 0.9;
     }
+
     100% {
         opacity: 0.9;
     }
@@ -238,9 +255,11 @@ body {
     0% {
         opacity: 0.1;
     }
+
     2% {
         opacity: 1;
     }
+
     4% {
         opacity: 0.1;
     }
@@ -248,9 +267,11 @@ body {
     8% {
         opacity: 1;
     }
+
     70% {
         opacity: 0.7;
     }
+
     100% {
         opacity: 1;
     }

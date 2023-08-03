@@ -1,4 +1,3 @@
-// Obtener el elemento del texto "darling"
 const darlingText = document.getElementById("darlingText");
 
 // Función para animar las letras del texto
@@ -10,7 +9,7 @@ function animateLetters() {
   }
   darlingText.innerHTML = newText;
 }
-// Evento cuando la página se carga completamente
+
 window.addEventListener("load", () => {
   animateLetters(); // Llama a la función para animar las letras del texto
 });
@@ -21,18 +20,18 @@ function fadeToBlack() {
   overlay.classList.add("overlay");
   document.body.appendChild(overlay);
 
-  let opacity = 0.1; // Opacidad inicial
+  let opacity = 0.1;
   const interval = setInterval(() => {
     overlay.style.backgroundColor = `rgba(0, 0, 0, ${opacity})`;
-    opacity += 0.1; // Aumentar la opacidad en cada iteración
+    opacity += 0.1;
     if (opacity >= 1) {
-      clearInterval(interval); // Detener la transición cuando la opacidad llegue a 1
+      clearInterval(interval);
       window.location.href = "pantalla_principal.html"; // Redireccionar a la pantalla principal
     }
-  }, 200); // Intervalo de tiempo en milisegundos (200ms en este caso)
+  }, 200); // Intervalo de tiempo
 }
 
-const botonFinalizar = document.querySelector(".boto");
+const botonFinalizar = document.querySelector(".boton_2");
 
 // Evento cuando se hace clic en el botón "Finalizar todo"
 botonFinalizar.addEventListener("click", () => {

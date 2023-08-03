@@ -17,16 +17,16 @@ body {
 }
 
 /* Estilos para el título */
-.center-text {
+/* .center-text {
     position: absolute;
     top: -8%;
     left: 47.5%;
     transform: translate(-50%);
     font-family: 'Monoton', cursive;
     font-size: 110px;
-    color: #000000;
+    color: #ffffff;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-}
+} */
 
 /* Estilos para el texto del mensaje */
 .Tex_1 {
@@ -61,6 +61,20 @@ body {
     transition: background-color 0.3s, transform 0.3s;
 }
 
+.boton:hover {
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.1);
+    color: black;
+    font-size: larger;
+}
+
+.boton:active {
+    background-color: #3d94cf;
+    transform: scale(0.98);
+}
+
+/* ********************************** */
+
 .boto {
     position: absolute;
     bottom: 3%;
@@ -80,8 +94,10 @@ body {
 
 
 .boto:hover {
-    background-color: #6fc5ff;
+    background-color: #ffffff;
     transform: scale(1.1);
+    color: black;
+    font-size: larger;
 }
 
 .boto:active {
@@ -91,24 +107,63 @@ body {
 
 /* ******************************************************************+ */
 
-.boton:hover {
-    background-color: rgb(245, 22, 22);
-    transform: scale(1.1);
-}
-
-.boton:active {
-    background-color: #3d94cf;
-    transform: scale(0.98);
-}
-
 audio {
     position: fixed;
     bottom: 20px;
     left: 20px;
     z-index: 9999;
-    /* Asegura que el reproductor esté por encima de otros elementos */
     background-color: #f2f2f2;
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 50px;
+}
+
+/* ************************************************ */
+/* Estilos para el título */
+.center-text {
+    position: absolute;
+    top: -8%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Monoton', cursive;
+    font-size: 110px;
+    color: #ffffff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para animar las letras */
+#darlingText {
+    display: inline-block;
+}
+
+#darlingText span {
+    display: inline-block;
+    animation: animateLetter 0.8s ease-in-out;
+}
+
+@keyframes animateLetter {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* *********************** Hacer que la pantalla se oscuresca */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    /* Inicialmente transparente */
+    pointer-events: none;
+    /* No captura eventos para permitir clics en los elementos debajo */
+    z-index: 9999;
+    /* Asegura que el overlay esté por encima de todo */
 }
