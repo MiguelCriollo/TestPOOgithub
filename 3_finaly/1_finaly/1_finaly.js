@@ -27,7 +27,6 @@ function fadeToBlack() {
     opacity += 0.1; // Aumentar la opacidad en cada iteración
     if (opacity >= 1) {
       clearInterval(interval); // Detener la transición cuando la opacidad llegue a 1
-      window.location.href = "pantalla_principal.html"; // Redireccionar a la pantalla principal
     }
   }, 200); // Intervalo de tiempo en milisegundos (200ms en este caso)
 }

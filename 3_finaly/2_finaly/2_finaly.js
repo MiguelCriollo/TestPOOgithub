@@ -26,7 +26,6 @@ function fadeToBlack() {
     opacity += 0.1;
     if (opacity >= 1) {
       clearInterval(interval);
-      window.location.href = "pantalla_principal.html"; // Redireccionar a la pantalla principal
     }
   }, 200); // Intervalo de tiempo
 }
