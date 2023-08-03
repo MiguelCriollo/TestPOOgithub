@@ -43,11 +43,8 @@ function nextPage(){
         }
     }, 50);
     setTimeout(function() {
-<<<<<<< Updated upstream
-        window.location.href = "../../../index.html";
-=======
         window.location.href = "../3_finaly/3_finaly/3_finaly.html";
->>>>>>> Stashed changes
+
     }, 3000);
 }
 
