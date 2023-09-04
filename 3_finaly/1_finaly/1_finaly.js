@@ -12,7 +12,7 @@ function animateLetters() {
 }
 // Evento cuando la página se carga completamente
 window.addEventListener("load", () => {
-  animateLetters(); // Llama a la función para animar las letras del texto
+  animateLetters(); 
 });
 
 // Función para mostrar la pantalla negra y redireccionar a la pantalla principal
@@ -24,11 +24,11 @@ function fadeToBlack() {
   let opacity = 0.1; // Opacidad inicial
   const interval = setInterval(() => {
     overlay.style.backgroundColor = `rgba(0, 0, 0, ${opacity})`;
-    opacity += 0.1; // Aumentar la opacidad en cada iteración
+    opacity += 0.1; 
     if (opacity >= 1) {
-      clearInterval(interval); // Detener la transición cuando la opacidad llegue a 1
+      clearInterval(interval);
     }
-  }, 200); // Intervalo de tiempo en milisegundos (200ms en este caso)
+  }, 200);
 }
 
 const botonFinalizar = document.querySelector(".boto");
