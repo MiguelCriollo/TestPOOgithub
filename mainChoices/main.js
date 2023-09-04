@@ -109,7 +109,7 @@ function nextButtonClick(){
         }
     }
     if(statesOfPrinting.decision){
-        
+        //multiple retorno
         if(!desicionsTreeFrom0to4[levelCounter][decision]){
             redirectToDeath();
         }else{
@@ -139,7 +139,16 @@ function nextButtonClick(){
         
     
 }
-
+/*
+function example(){
+    if(!statesOfPrinting.decision) return
+    if(!desicionsTreeFrom0to4[levelCounter][decision]){
+        redirectToDeath();
+        return
+    }
+    if(statesOfPrinting.final)
+}
+*/
 function redirectToDeath(){
     bodyTransition();
     setTimeout(function() {
